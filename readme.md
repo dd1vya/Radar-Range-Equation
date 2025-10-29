@@ -5,6 +5,8 @@ To calculate the maximum range of a radar system using the Radar Range Equation 
 
 ### Theory:
 The Radar Range Equation is a fundamental relation used in radar system design to determine the maximum range at which a radar can detect a target. It is expressed as:
+
+
 <img width="668" height="728" alt="Screenshot 2025-10-29 081954" src="https://github.com/user-attachments/assets/1cc7b58d-a41a-4159-bad2-445992f69dec" />
 
 ### Procedure:
