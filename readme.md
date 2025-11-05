@@ -50,6 +50,8 @@ plot(Ga, Rmax3);
 
 
 ### Manual Calculations: 
+![WhatsApp Image 2025-11-05 at 08 43 02_f94c59c3](https://github.com/user-attachments/assets/585a17e6-ece8-4925-afda-b0bf5ab0a6aa)
+
 
 
 ### Result:
