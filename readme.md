@@ -23,29 +23,31 @@ Run the program to obtain and display the maximum radar range.
 
 ### Code:
 ```
-Ppeak = 500000;
-G = 25118.86;
+Pt = 1000;
+G = 1000;
 sigma = 1;
-Ae = 32;
+Ae = 10;
 
 Smin = logspace(-12, -6, 100);
-Rmax = ((Ppeak * G * sigma * Ae) ./ (16 * %pi^2 .* Smin)).^(1/4);
+Rmax = ((Pt * G * sigma * Ae) ./ (16 * %pi^2 .* Smin)).^(1/4);
 subplot(3,1,1);
 plot(Smin, Rmax);
 
-Ppeaka = linspace(1e5, 1e6, 100);
-Rmax2 = ((Ppeaka * G * sigma * Ae) ./ (16 * %pi^2 * 1e-12)).^(1/4);
+Ppeak = linspace(100, 10000, 100);
+Rmax2 = ((Ppeak * G * sigma * Ae) ./ (16 * %pi^2 * 1e-10)).^(1/4);
 subplot(3,1,2);
-plot(Ppeaka, Rmax2);
+plot(Ppeak, Rmax2);
 
-Ga = linspace(1e4, 3e4, 100);
-Rmax3 = ((Ppeak * Ga * sigma * Ae) ./ (16 * %pi^2 * 1e-12)).^(1/4);
+Gt = linspace(100, 2000, 100);
+Rmax3 = ((Pt * Gt * sigma * Ae) ./ (16 * %pi^2 * 1e-10)).^(1/4);
 subplot(3,1,3);
-plot(Ga, Rmax3);
+plot(Gt, Rmax3);
+
 ```
 
 ### Output waveform:
-<img width="1072" height="873" alt="image" src="https://github.com/user-attachments/assets/5e4e2d19-1037-4402-9fee-46f849fbde5c" />
+<img width="1561" height="981" alt="image" src="https://github.com/user-attachments/assets/35eb708a-5cfd-42be-a970-09dbc885b3b0" />
+
 
 
 
